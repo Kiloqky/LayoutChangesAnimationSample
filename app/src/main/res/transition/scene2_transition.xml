@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <explode android:duration="1000">
+        <targets>
+            <target android:targetId="@+id/summer_smith" />
+        </targets>
+    </explode>
+
+    <fade
+        android:duration="1000"
+        android:startDelay="1000">
+        <targets>
+            <target android:targetId="@+id/beth_smith" />
+        </targets>
+    </fade>
+
+    <fade
+        android:duration="1000"
+        android:startDelay="2000">
+        <targets>
+            <target android:targetId="@+id/jerry_smith" />
+        </targets>
+    </fade>
+
+    <explode
+        android:duration="1000"
+        android:startDelay="3000"
+        android:interpolator="@android:interpolator/bounce">
+        <targets>
+            <target android:targetId="@+id/morty_smith" />
+        </targets>
+    </explode>
+
+    <changeBounds android:startDelay="4000" />
+
+</transitionSet>
